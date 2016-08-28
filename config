@@ -177,8 +177,9 @@ bindsym --whole-window $mod+Ctrl+button5 exec transset-df -p --dec 0.2
 ########################################################################
 
 # 启动改变窗口大小模式
-bindsym $mod+r mode "resize"
-mode "resize" {
+bindsym $mod+r mode "$Resize"
+set $Resize [h]width-less [l]width-more [j]hight-less [k]hight-more
+mode "$Resize" {
 	# h缩小窗口宽度
 	# l增大窗口宽度
 	# j缩小窗口高度
