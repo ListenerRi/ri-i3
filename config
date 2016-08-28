@@ -178,7 +178,7 @@ bindsym --whole-window $mod+Ctrl+button5 exec transset-df -p --dec 0.2
 
 # 启动改变窗口大小模式
 bindsym $mod+r mode "$Resize"
-set $Resize [h]width-less [l]width-more [j]hight-less [k]hight-more
+set $Resize Resize: [h]width-less [l]width-more [j]hight-less [k]hight-more
 mode "$Resize" {
 	# h缩小窗口宽度
 	# l增大窗口宽度
@@ -203,7 +203,7 @@ mode "$Resize" {
 # 挂起,注销,锁屏p,重启,关机
 # 只支持systemd类型的系统
 bindsym control+$mod+Delete mode "$Systemctl"
-set $Systemctl [s]uspend [e]xit-i3 [l]ock [L]ock&&suspend [r]eboot [p]oweroff
+set $Systemctl System: [s]uspend [e]xit-i3 [l]ock [L]ock&&suspend [r]eboot [p]oweroff
 mode "$Systemctl" {
 	# s挂起
 	# e注销(退出i3)
