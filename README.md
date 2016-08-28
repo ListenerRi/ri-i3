@@ -5,5 +5,5 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 - config_i3status是i3status的配置文件,用来在i3bar上显示一些系统信息
 
 # 截图
-![start](start.png) ![split-window](split-window.png)
-![transparent](transparent.eng) ![float-shadow](float-shadow.png)
+![start](/screenshots/start.png) ![split-window](/screenshots/split-window.png)
+![transparent](/screenshots/transparent.eng) ![float-shadow](/screenshots/float-shadow.png)
