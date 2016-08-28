@@ -298,9 +298,7 @@ mode "$Launcher" {
 bar {
 	# bar的位置在顶部
 	position top
-	# 由i3status提供的status
-        #status_command i3status -c $HOME/.config/i3/config_i3status
-	# 通过脚本显示网速并结合i3status提供的status
+	# 通过显示网速的脚本调用i3status提供status
 	status_command $HOME/.config/i3/measure-net-speed-i3status.bash
 }
 
