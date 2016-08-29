@@ -66,8 +66,8 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 |$mod+button5                    |向右移动窗口                               |
 |$mod+Shift+button4              |向上移动窗口                               |
 |$mod+Shift+button5              |向下移动窗口                               |
-|$mod+Ctrl+button4               |使窗口不透明                               |
-|$mod+Ctrl+button5               |使窗口透明                                 |
+|button4                         |在窗口标题上向上滚动窗口不透明             |
+|button5                         |在窗口标题上向下滚动使窗口透明             |
 
 ## 模式按键
 **按下此类按键后进入特殊模式,等待下一个按键以执行对应功能**

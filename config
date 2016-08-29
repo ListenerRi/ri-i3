@@ -165,10 +165,10 @@ bindsym --whole-window $mod+button5 move right
 # 在窗口任意位置使用主热键+shift+滚轮键上下移动窗口
 bindsym --whole-window $mod+Shift+button4 move up
 bindsym --whole-window $mod+Shift+button5 move down
-# 在窗口任意位置使用主热键+Ctrl+滚轮键调整窗口透明
-## 需要安装transset-df
-bindsym --whole-window $mod+Ctrl+button4 exec transset-df -p --inc 0.2
-bindsym --whole-window $mod+Ctrl+button5 exec transset-df -p --dec 0.2
+# 在窗口标题使用滚轮键调整窗口透明
+## 需要安装compton,具体设置透明的方法查看命令: man compton-trans
+bindsym button4 exec compton-trans -c +10
+bindsym button5 exec compton-trans -c -10
 
 
 
@@ -275,14 +275,15 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+a mode "$Launcher"
-set $Launcher Launch: [f]irefox [t]hunar [n]etease-cloud-music [s]s-qt5
+set $Launcher Launch: [f]irefox [c]hrome [t]hunar [n]etease-cloud-music [a]ndroid-studio [s]s-qt5 [v]irtualbox
 mode "$Launcher" {
-	# f启动firefox浏览器
-	# t启动thunar文件管理器
 	bindsym f exec firefox; mode "default"
+	bindsym c exec google-chrome-stable; mode "default"
 	bindsym t exec thunar; mode "default"
 	bindsym n exec netease-cloud-music; mode "default"
+	bindsym a exec android-studio; mode "default"
 	bindsym s exec ss-qt5; mode "default"
+	bindsym v exec virtualbox; mode "default"
 
 	# esc或回车返回正常模式
 	bindsym Escape mode "default"
@@ -328,22 +329,19 @@ for_window [class="Firefox" instance="Places"] floating enable
 # 当启动i3时自动启动以下程序
 ## 如果未安装以下某个程序,注释掉那一行即可
 
-# xcompmgr混合窗口管理器(窗口特效,如阴影,渐入渐出,透明等)
+# compton(基于xcompmgr)混合窗口管理器(提供窗口阴影,渐入渐出,透明等)
 ## >>透明效果
-## >>>要想有透明效果必须先启动xcompmgr,具体软件里有设置透明的就可以透明了,
-## >>>如果具体软件里没有透明选项,就需要transset-df软件,并用其对具体软件设置透明,
-## >>>本配置已经在上面对鼠标按键(button)绑定的设置里实现了对所有窗口调整透明,
-## >>>注意:xcompmgr+transset-df实现的透明当窗口处于全屏模式时无法透明到窗口下面的窗口,只能透明到壁纸!!
-## xcompmgr添加-f参数启用渐入渐出效果可能会导致按$mod+Shift+r重启i3时什么都不显示,
-## 这时需要再次按$mod+Shift+r重启i3
-## 故而这里只是用-c参数启用了阴影效果
-exec --no-startup-id xcompmgr -c
+## >>>要想有透明效果必须先启动compton,有些软件提供了透明设置,在软件里调整即可,
+## >>>如果软件里没有提供透明设置,可以用compton-trans命令对具体软件窗口设置透明,
+## >>>本配置已经在上面对鼠标按键(button)绑定的设置里实现了对窗口调整透明,
+## >>>注意:compton实现的透明当窗口处于全屏模式时只能透明到壁纸!!
+exec --no-startup-id compton --config "$HOME/.config/i3/config_compton"
 # feh显示壁纸
 exec --no-startup-id feh --bg-scale "$HOME/.config/i3/wallpaper.png"
 # fcitx输入法
 exec --no-startup-id fcitx-autostart
 # tilda下拉终端模拟器
-exec --no-startup-id tilda
+exec --no-startup-id sleep 5 && tilda
 # stardict字典
 exec --no-startup-id stardict
 # Networkmanager网络指示器
