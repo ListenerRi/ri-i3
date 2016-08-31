@@ -319,6 +319,7 @@ for_window [class="Stardict"] floating enable
 for_window [class="Tilda"] floating enable
 for_window [class="Ristretto"] floating enable
 for_window [class="Firefox" instance="Places"] floating enable
+for_window [class="Anydesk"] floating enable
 
 
 
