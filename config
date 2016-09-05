@@ -11,8 +11,8 @@
 #全局相关
 ########################################################################
 
-#设置主热键为'alt'
-set $mod Mod1
+#设置主热键为'Windows键'
+set $mod Mod4
 
 # 窗口字体,如果bar中没有另外设置自己也会用于bar中
 font pango:monospace 8
@@ -208,7 +208,7 @@ mode "$Resize" {
 
 # 挂起,注销,锁屏p,重启,关机
 # 只支持systemd类型的系统
-bindsym control+$mod+Delete mode "$Systemctl"
+bindsym $mod+Shift+s mode "$Systemctl"
 set $Systemctl System: [s]uspend [e]xit-i3 [l]ock [L]ock&&suspend [r]eboot [p]oweroff
 mode "$Systemctl" {
 	# s挂起

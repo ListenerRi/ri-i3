@@ -17,8 +17,7 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 # 主要按键
 
 ## 特殊键解释
-- $mod:Alt
-- Mod4:Windows
+- $mod:Mod4(Windows键)
 - Return:回车
 - Up,Down,Left,Right:上下左右
 - Print:打印键
@@ -79,6 +78,6 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 |:----:              |:----:    |
 |$mod+a              |运行软件 |
 |$mod+r              |窗口大小 |
-|control+$mod+Delete |关机重启 |
+|$mod+Shift+s        |关机重启 |
 |$mod+Shift+v        |音量调节 |
 |$mod+Shift+b        |亮度调节 |
