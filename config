@@ -56,6 +56,12 @@ bindsym Ctrl+Print exec xfce4-screenshooter -w -s "$HOME/Pictures/"
 # 关闭当前窗口
 bindsym $mod+q kill
 
+# 移动当前窗口到scratchpad工作区(隐藏当前窗口)
+bindsym $mod+i move scratchpad
+# 从scratchpad工作区移出隐藏的窗口(恢复隐藏的窗口)
+# 也可切换隐藏过的窗口
+bindsym $mod+o scratchpad show
+
 # 启动dmenu(一个显示所有可执行文件的应用启动器),需要安装dmenu
 bindsym $mod+d exec dmenu_run
 # 也可以使用i3-dmenu-desktop来代替dmenu,它是基于dmenu的,
