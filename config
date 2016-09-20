@@ -329,6 +329,7 @@ for_window [class="Anydesk"] floating enable
 for_window [class="realvnc-vncviewer"] floating enable
 for_window [class="TeamViewer"] floating enable
 for_window [class="File-roller"] floating enable
+for_window [class="Genymotion Player"] floating enable
 
 
 
