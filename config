@@ -43,9 +43,6 @@ new_float normal 3
 #按键相关
 ########################################################################
 
-# 启动终端模拟器
-bindsym $mod+Return exec i3-sensible-terminal
-
 # 截图
 ## 使用xfce4-screenshooter,截取的图片提示保存到"$HOME/Pictures/"
 ## 点击Print键进入截图模式
@@ -281,15 +278,11 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+a mode "$Launcher"
-set $Launcher Launch: [f]irefox [c]hrome [t]hunar [n]etease-cloud-music [a]ndroid-studio [s]s-qt5 [v]irtualbox
+set $Launcher Launch: [t]erminal [f]irefox [t]hunar
 mode "$Launcher" {
+	bindsym t exec i3-sensible-terminal; mode "default"
 	bindsym f exec firefox; mode "default"
-	bindsym c exec google-chrome-stable; mode "default"
 	bindsym t exec thunar; mode "default"
-	bindsym n exec netease-cloud-music; mode "default"
-	bindsym a exec android-studio; mode "default"
-	bindsym s exec ss-qt5; mode "default"
-	bindsym v exec virtualbox; mode "default"
 
 	# esc或回车返回正常模式
 	bindsym Escape mode "default"

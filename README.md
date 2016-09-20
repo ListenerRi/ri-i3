@@ -32,9 +32,8 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 
 |按键                            |功能                                       |
 |:----:                          |:----:                                     |
-|$mod+Return                     |打开terminal                               |
-|Print                           |进入截图模式                               |
-|Ctrl+Print                      |截取当前窗口                               |
+|Print                           |进入截图模式(依赖xfce4-screenshooter)      |
+|Ctrl+Print                      |截取当前窗口(依赖xfce4-screenshooter)      |
 |$mod+q                          |关闭当前窗口                               |
 |$mod+i                          |隐藏当前窗口                               |
 |$mod+o                          |恢复(取消隐藏)窗口                         |
