@@ -76,7 +76,7 @@ cpu_temperature p {
         format = "P-T: %degrees°C"
 	max_threshold = 80
 	# 系统中physical显卡温度文件(出错或不正常就修改path指向设备正确文件)
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
 }
 
 # cpu0温度
@@ -84,7 +84,7 @@ cpu_temperature 0 {
         format = "C0-T: %degrees°C"
 	max_threshold = 80
 	# 系统中cpu设备温度文件(出错或不正常就修改path指向正确设备文件)
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp2_input"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
 }
 
 # cpu1温度
@@ -92,7 +92,7 @@ cpu_temperature 1 {
         format = "C1-T: %degrees°C"
 	max_threshold = 80
 	# 系统中cpu设备温度文件(出错或不正常就修改path指向正确设备文件)
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp3_input"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
 }
 
 # cpu使用情况
