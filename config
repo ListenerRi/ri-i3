@@ -278,11 +278,11 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+a mode "$Launcher"
-set $Launcher Launch: [s]hell [f]irefox [t]hunar
+set $Launcher Launch: [t]erminal [e]xplore [f]irefox
 mode "$Launcher" {
-	bindsym s exec i3-sensible-terminal; mode "default"
+	bindsym t exec i3-sensible-terminal; mode "default"
+	bindsym e exec nautilus; mode "default"
 	bindsym f exec firefox; mode "default"
-	bindsym t exec thunar; mode "default"
 
 	# esc或回车返回正常模式
 	bindsym Escape mode "default"
@@ -323,6 +323,7 @@ for_window [class="realvnc-vncviewer"] floating enable
 for_window [class="TeamViewer"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Genymotion Player"] floating enable
+for_window [class="Nautilus"] floating enable
 
 
 
