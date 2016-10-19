@@ -43,6 +43,9 @@ new_float normal 3
 #按键相关
 ########################################################################
 
+# 启动终端
+bindsym $mod+Return exec i3-sensible-terminal
+
 # 截图
 ## 使用xfce4-screenshooter,截取的图片提示保存到"$HOME/Pictures/"
 ## 点击Print键进入截图模式
@@ -278,9 +281,8 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+a mode "$Launcher"
-set $Launcher Launch: [t]erminal [e]xplore [f]irefox
+set $Launcher Launch: [e]xplore [f]irefox
 mode "$Launcher" {
-	bindsym t exec i3-sensible-terminal; mode "default"
 	bindsym e exec nautilus; mode "default"
 	bindsym f exec firefox; mode "default"
 
