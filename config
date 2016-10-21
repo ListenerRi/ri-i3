@@ -285,7 +285,7 @@ mode "$Backlight" {
 }
 
 # 启动快速打开指定应用模式
-bindsym $mod+a mode "$Launcher"
+bindsym $mod+z mode "$Launcher"
 set $Launcher Launch: [e]xplore [f]irefox
 mode "$Launcher" {
 	bindsym e exec nautilus; mode "default"

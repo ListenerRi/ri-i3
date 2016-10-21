@@ -32,8 +32,8 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 
 |按键                            |功能                                       |
 |:----:                          |:----:                                     |
-|Print                           |进入截图模式(依赖xfce4-screenshooter)      |
-|Ctrl+Print                      |截取当前窗口(依赖xfce4-screenshooter)      |
+|Print                           |进入截图模式(依赖deepin-screenshoot)      |
+|Ctrl+Print                      |截取当前窗口(依赖deepin-screenshoot)      |
 |$mod+q                          |关闭当前窗口                               |
 |$mod+i                          |隐藏当前窗口                               |
 |$mod+o                          |恢复(取消隐藏)窗口                         |
@@ -58,7 +58,7 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 |$mod+?                          |'?'为数字,切换到对应工作区                 |
 |$mod+Shift+?                    |'?'为数字,将当前窗口移动到对应工作区       |
 |$mod+Shift+c                    |重启加载i3配置文件                         |
-|$mod+Shift+r                    |重启i3(不注销当前会话)                     |
+|$mod+Shift+r                    |重启i3wm(不注销当前会话)                   |
 |$mod+button2                    |关闭点击的窗口                             |
 |button2                         |点击窗口标题后关闭对应窗口                 |
 |button3                         |点击窗口标题后切换对应窗口的浮动与平铺模式 |
@@ -75,7 +75,7 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 
 |按键                |模式     |
 |:----:              |:----:    |
-|$mod+a              |运行软件 |
+|$mod+z              |运行软件 |
 |$mod+r              |窗口大小 |
 |$mod+Shift+s        |关机重启 |
 |$mod+Shift+v        |音量调节 |
