@@ -52,11 +52,11 @@ workspace_auto_back_and_forth yes
 bindsym $mod+Return exec i3-sensible-terminal
 
 # 截图
-## 使用xfce4-screenshooter,截取的图片提示保存到"$HOME/Pictures/"
+## 使用deepin-screenshot,截取的图片提示保存到"$HOME/Pictures/"
 ## 点击Print键进入截图模式
-bindsym Print exec xfce4-screenshooter -r -s "$HOME/Pictures/"
+bindsym Print exec deepin-screenshot -s "$HOME/Pictures/`date +%Y-%m-%d-%H-%M-%S`"
 ## 点击$mod+Print键截取当前窗口
-bindsym Ctrl+Print exec xfce4-screenshooter -w -s "$HOME/Pictures/"
+bindsym Ctrl+Print exec deepin-screenshot -w -s "$HOME/Pictures/`date +%Y-%m-%d-%H-%M-%S`"
 
 # 关闭当前窗口
 bindsym $mod+q kill
