@@ -37,6 +37,11 @@ hide_edge_borders none
 new_window normal 3
 new_float normal 3
 
+# 自动切换回上一个工作区
+# 当使用$mod+2从第一个工作区来到第二个工作区后
+# 再次点击$mod+2会回到第一个工作区
+workspace_auto_back_and_forth yes
+
 
 
 ########################################################################
