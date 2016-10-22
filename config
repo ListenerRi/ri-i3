@@ -51,6 +51,10 @@ workspace_auto_back_and_forth yes
 # 启动终端
 bindsym $mod+Return exec i3-sensible-terminal
 
+# 雷神模式
+# 使用deepin-terminal
+bindsym F1 exec xfce4-terminal --fullscreen --drop-down
+
 # 截图
 ## 使用deepin-screenshot,截取的图片提示保存到"$HOME/Pictures/"
 ## 点击Print键进入截图模式
@@ -353,7 +357,7 @@ exec --no-startup-id feh --bg-scale "$HOME/.config/i3/wallpaper.png"
 # fcitx输入法
 exec --no-startup-id fcitx-autostart
 # tilda下拉终端模拟器
-exec --no-startup-id sleep 5 && tilda
+#exec --no-startup-id sleep 5 && tilda
 # stardict字典
 exec --no-startup-id stardict
 # Networkmanager网络指示器
