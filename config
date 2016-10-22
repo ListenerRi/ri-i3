@@ -116,10 +116,10 @@ bindsym $mod+t layout tabbed
 bindsym $mod+w layout toggle split
 
 # 为当前窗口切换瓦片式(分割式)和浮动式布局
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+Tab floating toggle
 
 # 在瓦片式(分割式)和浮动式窗口之前切换焦点
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Tab focus mode_toggle
 
 # 切换焦点到父容器
 ## 通常需要一次操作同一容器下多个窗口时会用到此功能

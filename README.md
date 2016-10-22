@@ -32,8 +32,8 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 
 |按键                            |功能                                       |
 |:----:                          |:----:                                     |
-|Print                           |进入截图模式(依赖deepin-screenshoot)      |
-|Ctrl+Print                      |截取当前窗口(依赖deepin-screenshoot)      |
+|Print                           |进入截图模式(依赖deepin-screenshoot)       |
+|Ctrl+Print                      |截取当前窗口(依赖deepin-screenshoot)       |
 |$mod+q                          |关闭当前窗口                               |
 |$mod+i                          |隐藏当前窗口                               |
 |$mod+o                          |恢复(取消隐藏)窗口                         |
@@ -51,8 +51,8 @@ ri-i3是一份包含了大多数功能的i3wm配置文件
 |$mod+s                          |切换到堆叠模式                             |
 |$mod+t                          |切换到标签模式                             |
 |$mod+w                          |切换当前窗口的水平或垂直模式               |
-|$mod+Shift+space                |切换当前窗口浮动模式                       |
-|$mod+space                      |在浮动窗口和平铺窗口之间切换焦点           |
+|$mod+Shift+Tab                  |切换当前窗口浮动模式                       |
+|$mod+Tab                        |在浮动窗口和平铺窗口之间切换焦点           |
 |$mod+p                          |选中父容器                                 |
 |$mod+c                          |选中子窗口                                 |
 |$mod+?                          |'?'为数字,切换到对应工作区                 |
