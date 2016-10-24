@@ -271,8 +271,8 @@ mode "$Backlight" {
 	# d以20%的幅度降低亮度
 	bindsym f exec xbacklight -set 100; mode "default"
 	bindsym c exec xset dpms force off; mode "default"
-	bindsym u exec xbacklight -inc 20
-	bindsym d exec xbacklight -dec 20
+	bindsym u exec xbacklight -inc 10
+	bindsym d exec xbacklight -dec 10
 
 	# 右最大量度
 	# 左关闭屏幕亮度(移动鼠标或点击任意键恢复亮度)
