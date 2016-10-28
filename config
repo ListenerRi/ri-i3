@@ -105,7 +105,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+v split toggle
 
 # 为当前容器切换全屏模式
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # 更改当前容器的布局方式
 # >>堆叠式
@@ -289,7 +289,7 @@ mode "$Backlight" {
 }
 
 # 启动快速打开指定应用模式
-bindsym $mod+z mode "$Launcher"
+bindsym $mod+f mode "$Launcher"
 set $Launcher Launch: [e]xplore [f]irefox
 mode "$Launcher" {
 	bindsym e exec nautilus; mode "default"
