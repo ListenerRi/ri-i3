@@ -290,10 +290,11 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+f mode "$Launcher"
-set $Launcher Launch: [e]xplore [f]irefox
+set $Launcher Launch: [e]xplore [f]irefox [v]irtualbox
 mode "$Launcher" {
 	bindsym e exec nautilus; mode "default"
 	bindsym f exec firefox; mode "default"
+	bindsym v exec virtualbox; mode "default"
 
 	# esc或回车返回正常模式
 	bindsym Escape mode "default"
@@ -335,6 +336,7 @@ for_window [class="TeamViewer"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Genymotion Player"] floating enable
 for_window [class="Nautilus"] floating enable
+#for_window [class="VirtualBox"] floating enable
 
 
 
