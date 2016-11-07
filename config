@@ -290,11 +290,12 @@ mode "$Backlight" {
 
 # 启动快速打开指定应用模式
 bindsym $mod+f mode "$Launcher"
-set $Launcher Launch: [e]xplore [f]irefox [v]irtualbox
+set $Launcher Launch: [e]xplore [f]irefox [v]irtualbox [n]etease-cloud-music
 mode "$Launcher" {
 	bindsym e exec nautilus; mode "default"
 	bindsym f exec firefox; mode "default"
 	bindsym v exec virtualbox; mode "default"
+	bindsym n exec netease-cloud-music; mode "default"
 
 	# esc或回车返回正常模式
 	bindsym Escape mode "default"
