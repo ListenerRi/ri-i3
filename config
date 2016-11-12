@@ -294,7 +294,7 @@ set $Launcher Launch: [t]hunar [f]irefox [g]oogle-chrome [v]irtualbox [n]etease-
 mode "$Launcher" {
 	bindsym t exec thunar; mode "default"
 	bindsym f exec firefox; mode "default"
-	bindsym g exec google-chrome; mode "default"
+	bindsym g exec google-chrome-stable; mode "default"
 	bindsym v exec virtualbox; mode "default"
 	bindsym n exec netease-cloud-music; mode "default"
 
